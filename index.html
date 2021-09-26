@@ -7,21 +7,22 @@
     <title>Document</title>
 
     <style>
-      /* test */
-      table,
-      td {
-        /* border: 1px solid #000000 !important; */
-        /* padding: 5px;
-        margin: 5px; */
-      }
-
-      h5,
-      img {
-        /* border: 1px solid blue; */
-      }
       p {
         padding: 0;
         margin: 0;
+      }
+
+      @media screen and (max-width: 600px) {
+        .table_parent {
+          width: 360px !important;
+        }
+
+        .background_container {
+          background-color: #7b8acc !important;
+        }
+        a {
+          text-decoration: underline;
+        }
       }
     </style>
   </head>
@@ -41,13 +42,15 @@
     >
       <tr>
         <td
+          class="background_container"
           align="center"
           style="
             padding: 0;
-            background-image: url('src/background.png');
+            background-image: url('https://i.ibb.co/TKfVKqc/background.png');
             background-size: cover;
             background-position: center;
-            background-color: #bcb5b0;
+            background-color: #7b8acc;
+            height: 100vh;
           "
         >
           <table
@@ -57,11 +60,15 @@
             role="presentation"
             style="
               width: 450px;
+              height: 80vh;
               border-collapse: collapse;
               border: 0;
               border-spacing: 0;
             "
           >
+            <tr>
+              <td style="padding: 0">&nbsp;</td>
+            </tr>
             <tr>
               <td
                 align="center"
@@ -69,19 +76,19 @@
                   padding: 5px;
                   border: 0;
                   background: #f8f8f8;
-                  border-radius: 35px;
+                  border-radius: 25px;
                 "
               >
                 <div>
                   <img
-                    src="src/SanFrancisco.png"
+                    src="https://i.ibb.co/HF3w12w/San-Francisco.png"
                     alt="San SanFrancisco"
                     width="500"
                     style="
                       width: 100%;
                       display: block;
                       line-height: auto;
-                      border-radius: 35px 35px 0 0;
+                      border-radius: 25px 25px 0 0;
                     "
                   />
 
@@ -120,9 +127,9 @@
                     </tr>
 
                     <td align="center" style="padding: 0">
-                      <h5 style="margin: 0; padding: 0; letter-spacing: 3px">
+                      <h6 style="margin: 0; padding: 0; letter-spacing: 3px">
                         ID Q0133228729
-                      </h5>
+                      </h6>
                     </td>
 
                     <tr>
@@ -154,7 +161,14 @@
                         >
                           <tr>
                             <!-- left col--top -->
-                            <td align="center" style="padding: 0; width: 148px">
+                            <td
+                              align="center"
+                              style="
+                                padding: 0;
+                                width: 148px;
+                                border-right: 1px solid silver;
+                              "
+                            >
                               <h6 style="padding: 0; margin: 0; color: #636363">
                                 American Airline
                               </h6>
@@ -173,7 +187,7 @@
                                 <tr>
                                   <td align="right" style="padding: 0">
                                     <img
-                                      src="src/americanAirline.png"
+                                      src="https://i.ibb.co/3rvzNxx/american-Airline.png"
                                       alt="american Airline icon"
                                       style="
                                         width: 20px;
@@ -263,7 +277,11 @@
                                 <tr>
                                   <td
                                     align="center"
-                                    style="padding: 0; width: 148px"
+                                    style="
+                                      padding: 0;
+                                      width: 148px;
+                                      border-left: 1px solid silver;
+                                    "
                                   >
                                     <h5
                                       style="
@@ -289,7 +307,7 @@
                                       <tr>
                                         <td align="right" style="padding: 0">
                                           <img
-                                            src="src/flight_seat.png"
+                                            src="https://i.ibb.co/QHgCrbX/flight-seat.png"
                                             alt="american Airline icon"
                                             style="
                                               width: 20px;
@@ -427,7 +445,7 @@
                                 <tr>
                                   <td align="center" style="padding: 0">
                                     <img
-                                      src="src/flight_icon.png"
+                                      src="https://i.ibb.co/vdk2Q7z/flight-icon.png"
                                       alt="icon of an aeroplane"
                                       style="
                                         width: 30px;
@@ -579,7 +597,12 @@
                               </h4>
                             </td>
 
-                            <td class="ghost-cell">&nbsp;</td>
+                            <td
+                              class="ghost-cell"
+                              style="border-right: 1px solid silver"
+                            >
+                              &nbsp;
+                            </td>
 
                             <td align="center" style="padding: 0; width: 147px">
                               <h6 style="margin: 0; padding: 0; color: #636363">
@@ -596,7 +619,12 @@
                               </h4>
                             </td>
 
-                            <td class="ghost-cell">&nbsp;</td>
+                            <td
+                              class="ghost-cell"
+                              style="border-right: 1px solid silver"
+                            >
+                              &nbsp;
+                            </td>
 
                             <td align="center" style="padding: 0; width: 147px">
                               <h6 style="margin: 0; padding: 0; color: #636363">
@@ -652,6 +680,7 @@
                                       border-collapse: collapse;
                                       border: 0;
                                       border-spacing: 0;
+                                      margin: 10px 0 0 0;
                                     "
                                   >
                                     <tr>
@@ -659,7 +688,7 @@
                                         <h6
                                           style="
                                             margin: 0;
-                                            padding: 5px;
+                                            padding: 0 0 2px 4px;
                                             color: #636363;
                                           "
                                         >
@@ -669,7 +698,7 @@
                                         <h5
                                           style="
                                             margin: 0;
-                                            padding: 3px;
+                                            padding: 0 0 0 4px;
                                             color: rgb(53, 53, 53);
                                           "
                                         >
@@ -681,6 +710,13 @@
                                             >Baggage details</a
                                           >
                                         </div>
+
+                                        <tr>
+                                          <td style="padding: 0">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding: 0">&nbsp;</td>
+                                        </tr>
                                       </td>
                                     </tr>
                                   </table>
@@ -703,8 +739,8 @@
                                       <td align="left" style="padding: 0">
                                         <h6
                                           style="
-                                            margin: 0;
-                                            padding: 4px 4px 4px 4px;
+                                            margin: 15px 0 0 0;
+                                            padding: 0 4px 4px 4px;
                                             color: #636363;
                                           "
                                         >
@@ -729,7 +765,7 @@
                                         >
                                           <tr>
                                             <td align="left" style="padding: 0">
-                                              <h5
+                                              <h6
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -737,13 +773,13 @@
                                                 "
                                               >
                                                 Base Fare
-                                              </h5>
+                                              </h6>
                                             </td>
                                             <td
                                               align="right"
                                               style="padding: 0"
                                             >
-                                              <h5
+                                              <h6
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -751,13 +787,13 @@
                                                 "
                                               >
                                                 U$ 1200.00
-                                              </h5>
+                                              </h6>
                                             </td>
                                           </tr>
 
                                           <tr>
                                             <td align="left" style="padding: 0">
-                                              <h5
+                                              <h6
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -765,13 +801,13 @@
                                                 "
                                               >
                                                 Taxes & Fees
-                                              </h5>
+                                              </h6>
                                             </td>
                                             <td
                                               align="right"
                                               style="padding: 0"
                                             >
-                                              <h5
+                                              <h6
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -779,13 +815,13 @@
                                                 "
                                               >
                                                 U$ 60.00
-                                              </h5>
+                                              </h6>
                                             </td>
                                           </tr>
 
                                           <tr>
                                             <td align="left" style="padding: 0">
-                                              <h5
+                                              <h6
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -793,13 +829,13 @@
                                                 "
                                               >
                                                 Convenience Charges
-                                              </h5>
+                                              </h6>
                                             </td>
                                             <td
                                               align="right"
                                               style="padding: 0"
                                             >
-                                              <h5
+                                              <h6
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -807,7 +843,7 @@
                                                 "
                                               >
                                                 U$ 10.00
-                                              </h5>
+                                              </h6>
                                             </td>
                                           </tr>
 
@@ -817,7 +853,7 @@
 
                                           <tr>
                                             <td align="left" style="padding: 0">
-                                              <h4
+                                              <h5
                                                 style="
                                                   margin: 0;
                                                   padding: 0;
@@ -825,7 +861,7 @@
                                                 "
                                               >
                                                 Grand Total
-                                              </h4>
+                                              </h5>
                                             </td>
                                             <td
                                               align="right"
@@ -862,7 +898,8 @@
                         style="
                           padding: 0;
                           background-color: #f3ebdd;
-                          border-radius: 0 0 35px 35px;
+                          border-radius: 0 0 150px 150px;
+                          height: 4px;
                         "
                       >
                         &nbsp;
