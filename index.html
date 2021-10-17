@@ -4,14 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
 
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
       p {
         padding: 0;
         margin: 0;
       }
 
+      /* td {
+        border: 1px solid blanchedalmond;
+      } */
+      .banner__text {
+        color: rgb(243, 243, 243);
+        font-weight: bold;
+      }
+
+      #banner__text-top {
+        text-align: right;
+      }
+      #banner__text-middle {
+        font-family: 'damion', Arial, sans-serif;
+        font-size: 38px !important;
+        font-style: italic;
+      }
+      #banner__text-bottom {
+        text-align: right;
+      }
       @media screen and (max-width: 600px) {
         .table_parent {
           width: 360px !important;
@@ -25,6 +47,24 @@
         }
       }
     </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        #banner__text-middle {
+          font-family: Arial, sans-serif;
+          font-size: 45px !important;
+          font-style: regular;
+        }
+
+        #canvas {
+          border-radius: 25px !important;
+        }
+
+        #banner {
+          border-radius: 25px 25px 0 0;
+        }
+      </style>
+    <![endif]-->
   </head>
   <body style="margin: 0; padding: 0">
     <table
@@ -38,6 +78,7 @@
         border: 0;
         border-spacing: 0;
         margin: 0;
+        font-family: sans-serif;
       "
     >
       <tr>
@@ -49,7 +90,7 @@
             background-image: url('https://i.ibb.co/TKfVKqc/background.png');
             background-size: cover;
             background-position: center;
-            background-color: #7b8acc;
+            background-color: #355b64;
             height: 100vh;
           "
         >
@@ -71,6 +112,7 @@
             </tr>
             <tr>
               <td
+                id="canvas"
                 align="center"
                 style="
                   padding: 5px;
@@ -80,18 +122,81 @@
                 "
               >
                 <div>
-                  <img
-                    src="https://i.ibb.co/HF3w12w/San-Francisco.png"
-                    alt="From Nevada to San Francisco"
-                    width="500"
+                  <table
+                    class="table_parent"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
                     style="
                       width: 100%;
-                      display: block;
-                      line-height: auto;
-                      border-radius: 25px 25px 0 0;
-                      font-size: large;
+                      border-collapse: collapse;
+                      border: 0;
+                      border-spacing: 0;
                     "
-                  />
+                  >
+                    <tr>
+                      <td
+                        id="banner"
+                        align="center"
+                        style="
+                          padding: 0;
+                          margin: 0;
+                          background-image: url('https://i.ibb.co/RjM6T83/san-Francisco2.png');
+                          background-size: cover;
+                          background-position: center;
+                          height: 220px;
+                          border-radius: 25px 25px 0 0;
+                          background-color: rgb(0, 98, 105);
+                        "
+                      >
+                        <table
+                          class="table_parent"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                          style="
+                            width: 300px;
+                            border-collapse: collapse;
+                            border: 0;
+                            border-spacing: 0;
+                          "
+                        >
+                          <tr>
+                            <td
+                              class="banner__text"
+                              id="banner__text-top"
+                              align="center"
+                              style="padding: 0"
+                            >
+                              From Nevada to
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              class="banner__text"
+                              id="banner__text-middle"
+                              align="center"
+                              style="padding: 0"
+                            >
+                              San Francisco
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              class="banner__text"
+                              id="banner__text-bottom"
+                              align="center"
+                              style="padding: 0"
+                            >
+                              1 adult
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
 
                   <table
                     class="table_top-content"
@@ -117,7 +222,7 @@
                               style="
                                 margin: 0 0 5px 0;
                                 padding: 0;
-                                color: #20b84b;
+                                color: #057566;
                               "
                             >
                               Flight Booked
@@ -446,7 +551,7 @@
                                 <tr>
                                   <td align="center" style="padding: 0">
                                     <img
-                                      src="https://i.ibb.co/vdk2Q7z/flight-icon.png"
+                                      src="https://i.ibb.co/J5tWmqv/flight-icon.png"
                                       alt="icon of an aeroplane"
                                       style="
                                         width: 30px;
